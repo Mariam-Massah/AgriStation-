@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <!-- navigation bar -->
+        <nav class="navbar">
+            <div class="navbar-left">
+                <img src="icon.png" alt="Logo" class="icon">
+                <span class="site-name">AgriStation</span>
+            </div>
+            <ul class="navbar-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Dashborad.html">Dashboard</a></li>
+                <li><a href="Dashborad.html#control-panel">Control Panel</a></li>
+            </ul>
+            <div class="navbar-account">
+                <a href="profile.html"><i class="fas fa-user"></i> Account</a>
+            </div>
+        </nav>
+
+        <!-- hero section -->
+        <div class="hero-section">
+            <div class="hero-content">
+                <h1>Dashboard</h1>
+                <p>Discover an intelligent farming ecosystem that integrates renewable energy, smart irrigation, and data-driven control — all in one platform.</p>
+                <div class="hero-buttons">
+                    <a href="#get-started" class="btn-primary">Get Started</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="dash.png">
+            </div>
+        </div>
+    </div>
+
+<!-- ////////////// dashboard section  ////////////// -->
+    <section class="dashboard">
+        <div clas="dashboard-countainer">
+            <div class="cards">
+                <!--////////////// card 1 //////////////-->
+                <div class="card">
+                    <img src="temperature.png" >
+                    <h3>Temperature</h3>
+                    <p>24.7°C</p>
+                    <p class="status-optimal">Optimal</p>
+                </div>
+
+                <!--////////////// card 2 //////////////-->
+                <div class="card">
+                    <img src="Humidity.png" >
+                    <h3>Humidity</h3>
+                    <p>59%</p>
+                    <p class="status-optimal">Optimal</p>
+                </div>
+
+                <!--////////////// card 3 //////////////-->
+                <div class="card">
+                    <img src="sprout.png" >
+                    <h3>Soil Moisture</h3>
+                    <p>37%</p>
+                    <p class="status-low">Low</p>
+                </div>
+
+                <!--////////////// card 4 //////////////-->
+                <div class="card">
+                    <img src="sun.png" >
+                    <h3>Light</h3>
+                    <p>850 lux</p>
+                    <p class="status-optimal">Optimal</p>
+                </div>
+
+                <!--////////////// card 5 //////////////-->
+                <div class="card">
+                    <img src="leaf.png" >
+                    <h3>CO₂ Level</h3>
+                    <p>450 ppm</p>
+                    <p class="status-optimal">Optimal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ////////////// canvas section  ////////////// --> 
+<section class="charts-section">
+    <div class="canva">
+        <h3>Temperature Over the Week</h3>
+        <canvas id="temperatureChart" width="200" height="100"></canvas>
+    </div>
+    <div class="canva">
+        <h3>Humidity Over the Week</h3>
+        <canvas id="humidityChart" width="200" height="100"></canvas>
+    </div>
+</section>
+
+<!-- ////////////// Crops section  ////////////// --> 
+<section class="crop-status">
+  <h2>Current Crops</h2>
+  <div class="crop-cards">
+    
+    <!-- Crop Card 1 -->
+    <div class="crop-card">
+      <img src="harvest.png" alt="Pepper">
+      <div class="crop-info">
+        <h1>Pepper</h1>
+        <p>Status: Growing</p>
+        <p>Needs moderate watering and full sunlight.</p>
+      </div>
+    </div>
+
+    <!-- Crop Card 2 -->
+    <div class="crop-card">
+      <img src="harvest.png" alt="Eggplant">
+            <div class="crop-info">
+                <h1>Eggplant</h1>
+                <p>Status: Early Stage</p>
+                <p>Requires high humidity and balanced nutrients.</p>
+            </div>
+    </div>
+  </div>
+      <div class="crop-buttons">
+            <button class="apply-btn">Modify Crops</button>
+            <button class="apply-btn">Add Crop</button>
+    </div>
+</section>
+
+
+<!-- ////////////// Control Panel section  ////////////// --> 
+ <section id="control-panel">
+                <div class="control-panel">
+                <h2>Control Panel</h2>
+                <div class="control-item">
+                    <span class="icon">🌀</span>
+                    <div>
+                        <strong>Ventilation Fan</strong>
+                        <p>Auto-regulated</p>
+                    </div>
+                    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+                </div>
+                <div class="control-item">
+                    <span class="icon">💧</span>
+                    <div>
+                        <strong>Irrigation System</strong>
+                        <p>Scheduled (3x daily)</p>
+                    </div>
+                    <label class="switch">
+      <input type="checkbox" checked>
+      <span class="slider round"></span>
+    </label>
+                </div>
+                <div class="control-item">
+                    <span class="icon">⚗</span>
+                    <div>
+                        <strong>Nutrient Dispenser</strong>
+                        <p>Auto-regulated</p>
+                    </div>
+                    <label class="switch">
+      <input type="checkbox">
+      <span class="slider round"></span>
+    </label>
+                </div>
+                <button class="apply-btn">Apply Settings</button>
+            </div>
+ </section>
+<!-- ////////////// footer section  ////////////// -->
+    <footer class="footer">
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="icon.png" alt="AgriStation Logo" />
+      <h1>AgriStation</h1>
+    </div>
+
+    <div class="footer-links">
+        <br>
+      <a href="home.html">Home</a>
+      <a href="Dashborad.html">Dashboard</a>
+      <a href="Dashborad.html#control-panel">Control Panel</a>
+      <a href="profile.html">Account</a>
+    </div>
+
+    <div class="footer-social">
+      <p>Follow us:</p>
+      <a href="#"><i class="fab fa-facebook"></i> AgriStation.Page</a>
+      <a href="#"><i class="fab fa-twitter"></i> AgriStation.Page</a>
+      <a href="#"><i class="fab fa-instagram"></i> AgriStation.Page</a>
+    </div>
+
+        <div class="footer-social">
+      <p>Contact us:</p>
+      <a href="#"><i class="fab fa-Phone"></i>Call us +1 8888 7878 8989</a>
+      <a href="#"><i class="fab fa-"></i>E-mail us hello@AgriStation.com</a>
+      <a href="#"><i class="fab fa-"></i>Join our Telegram t.me/AgriStation</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 AgriStation. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+  <script type="module">
+
+//////////// Firebase //////////////
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.3/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyCObztKLA4Z9gNhOZ44jC277jvQbG0_yxE",
+    authDomain: "agristation-58ce6.firebaseapp.com",
+    projectId: "agristation-58ce6",
+    storageBucket: "agristation-58ce6.firebasestorage.app",
+    messagingSenderId: "847568766852",
+    appId: "1:847568766852:web:ce1d894d6d754b09ee3fd1",
+    measurementId: "G-RMTZ8PFFYR"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
