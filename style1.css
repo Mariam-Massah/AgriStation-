@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-color: #fefae0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.login-box {
+  display: flex;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #283618;
+}
+
+.left-box, .right-box {
+  padding: 40px 30px;
+  flex: 1;
+  background-color: #606c3c;
+  color: white;
+  position: relative;
+}
+
+.right-box {
+  background: linear-gradient(to top right, #283618, #606c3c);
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.icon{
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+}
+.right-box h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.right-box span {
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  margin: 20px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 10px 40px 10px 10px;
+  background: transparent;
+  border: 2px solid #283618;
+  border-radius: 25px;
+  color: #fefae0;
+  outline: none;
+}
+
+.input-box label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  color: #fefae0;
+  transition: 0.3s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  left: 15px;
+  font-size: 12px;
+  color: #bc6c25;
+  background-color: #061d30;
+  padding: 0 5px;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background:  #283618;
+  color: #fefae0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.signup-link {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #d8a060;
+  text-decoration: none;
+}
